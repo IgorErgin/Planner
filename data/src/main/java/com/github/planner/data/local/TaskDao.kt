@@ -8,15 +8,16 @@ import kotlinx.coroutines.flow.Flow
 
 @Dao
 interface TaskDao {
-    @Query("SELECT * FROM tasks WHERE dateStart >= :dayStart AND dateStart <= :dayEnd ORDER BY dateStart ASC")
-    fun getTasksForDay(dayStart: Long, dayEnd: Long): Flow<List<TaskEntity>>
 
-    @Query("SELECT * FROM tasks WHERE id = :taskId")
-    suspend fun getTaskById(taskId: Int): TaskEntity?
+    @Query("SELECT * FROM tasks WHERE dateStart >= :start AND dateStart <= :end")
+    fun getTasksForDay(start: Long, end: Long): Flow<List<TaskEntity>>
 
-    @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun insertTasks(tasks: List<TaskEntity>)
+    @Query("SELECT * FROM tasks WHERE id = :id LIMIT 1")
+    suspend fun getTaskById(id: Int): TaskEntity?
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertTask(task: TaskEntity)
+
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    suspend fun insertTasks(tasks: List<TaskEntity>)
 }
