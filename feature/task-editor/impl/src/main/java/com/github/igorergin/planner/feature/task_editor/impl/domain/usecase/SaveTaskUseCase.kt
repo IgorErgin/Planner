@@ -1,7 +1,7 @@
 package com.github.igorergin.planner.feature.task_editor.impl.domain.usecase
 
-import com.github.planner.data.local.TaskEntity
-import com.github.planner.data.repository.TaskRepository
+import com.github.igorergin.planner.data.local.TaskEntity
+import com.github.igorergin.planner.data.repository.TaskRepository
 import java.time.Instant
 import java.time.LocalDateTime
 import java.time.LocalTime

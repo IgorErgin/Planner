@@ -2,7 +2,7 @@ package com.github.igorergin.planner
 
 import android.app.Application
 import com.github.igorergin.planner.core.common.di.ApplicationScope
-import com.github.planner.data.repository.TaskRepository
+import com.github.igorergin.planner.data.repository.TaskRepository
 import dagger.hilt.android.HiltAndroidApp
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.launch

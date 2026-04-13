@@ -1,4 +1,4 @@
-package com.github.planner.data.model
+package com.github.igorergin.planner.data.model
 
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable

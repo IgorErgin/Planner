@@ -36,4 +36,8 @@ dependencies {
 
     // Core
     implementation(libs.androidx.annotation.experimental)
+
+    //Test
+    implementation(libs.bundles.test)
+    testImplementation(libs.kotlinx.coroutines.test)
 }
