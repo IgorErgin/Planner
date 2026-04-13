@@ -1,8 +1,6 @@
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.compose)
-    alias(libs.plugins.kotlin.serialization)
-    alias(libs.plugins.ksp)
 }
 
 android {
@@ -10,7 +8,7 @@ android {
     compileSdk = 36
 
     defaultConfig {
-
+        minSdk = 26
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -21,7 +19,10 @@ android {
 }
 
 dependencies {
+    // Compose & UI
     implementation(platform(libs.androidx.compose.bom))
     implementation(libs.bundles.compose)
+    
+    // Debug
     debugImplementation(libs.androidx.compose.ui.tooling)
 }

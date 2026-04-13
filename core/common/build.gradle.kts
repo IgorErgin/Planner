@@ -10,6 +10,7 @@ android {
     compileSdk = 36
 
     defaultConfig {
+        minSdk = 26
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -20,9 +21,14 @@ android {
 }
 
 dependencies {
+    // Core & Coroutines
     implementation(libs.kotlinx.coroutines.android)
     implementation(libs.javax.inject)
+    
+    // Compose
     implementation(libs.androidx.compose.runtime)
-    ksp(libs.hilt.compiler)
+
+    // DI
     implementation(libs.hilt.android)
+    ksp(libs.hilt.compiler)
 }

@@ -1,6 +1,6 @@
 package com.github.planner.core.navigation
 
 interface AppNavigator {
-    fun navigateTo(route: String)
+    fun navigateTo(route: Any)
     fun back()
 }
