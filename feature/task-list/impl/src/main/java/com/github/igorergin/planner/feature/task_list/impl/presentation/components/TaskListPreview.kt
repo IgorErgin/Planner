@@ -1,11 +1,8 @@
 package com.github.igorergin.planner.feature.task_list.impl.presentation.components
 
 import android.content.res.Configuration
-import androidx.compose.foundation.layout.Box
-import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.Surface
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.github.igorergin.planner.feature.task_list.api.domain.model.TaskModel
 import com.github.igorergin.planner.feature.task_list.impl.presentation.TaskListState

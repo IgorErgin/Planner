@@ -10,6 +10,7 @@ android {
     compileSdk = 36
 
     defaultConfig {
+        minSdk = 26
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -20,14 +21,19 @@ android {
 }
 
 dependencies {
+    // Modules
     implementation(project(":core:common"))
 
-    implementation(libs.room.runtime)
-    implementation(libs.room.ktx)
-    implementation(libs.room.paging)
-    implementation(libs.kotlinx.serialization.json)
+    // Data & Serialization
+    implementation(libs.bundles.room)
     ksp(libs.room.compiler)
+    implementation(libs.kotlinx.serialization.json)
+    implementation(libs.androidx.datastore.preferences)
+
+    // DI
     implementation(libs.hilt.android)
     ksp(libs.hilt.compiler)
+
+    // Core
     implementation(libs.androidx.annotation.experimental)
 }
