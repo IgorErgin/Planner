@@ -1,4 +1,4 @@
-package com.github.planner.data.local
+package com.github.igorergin.planner.data.local
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey

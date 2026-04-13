@@ -1,8 +1,8 @@
-package com.github.planner.data.repository
+package com.github.igorergin.planner.data.repository
 
-import com.github.planner.data.local.TaskDao
-import com.github.planner.data.local.TaskEntity
-import com.github.planner.data.service.JsonParserService
+import com.github.igorergin.planner.data.local.TaskDao
+import com.github.igorergin.planner.data.local.TaskEntity
+import com.github.igorergin.planner.data.service.JsonParserService
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.first
 import javax.inject.Inject

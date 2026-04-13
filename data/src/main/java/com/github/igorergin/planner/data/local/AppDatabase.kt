@@ -1,4 +1,4 @@
-package com.github.planner.data.local
+package com.github.igorergin.planner.data.local
 
 import androidx.room.Database
 import androidx.room.RoomDatabase

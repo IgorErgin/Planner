@@ -6,9 +6,7 @@ import com.github.igorergin.planner.core.common.PlannerDispatchers
 import com.github.igorergin.planner.core.common.result.Result
 import com.github.igorergin.planner.core.common.result.asResult
 import com.github.igorergin.planner.core.mvi.BaseViewModel
-import com.github.igorergin.planner.feature.task_editor.api.TaskEditorRoute
 import com.github.igorergin.planner.feature.task_list.impl.domain.usecase.GetTasksForDayUseCase
-import com.github.planner.core.navigation.AppNavigator
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.flow.launchIn
@@ -18,7 +16,6 @@ import javax.inject.Inject
 @HiltViewModel
 class TaskListViewModel @Inject constructor(
     private val getTasksForDayUseCase: GetTasksForDayUseCase,
-    private val navigator: AppNavigator,
     @Dispatcher(PlannerDispatchers.IO) private val ioDispatcher: CoroutineDispatcher
 ) : BaseViewModel<TaskListState, TaskListIntent, TaskListEffect>(TaskListState()) {
 
@@ -34,10 +31,10 @@ class TaskListViewModel @Inject constructor(
                 loadTasks()
             }
             is TaskListIntent.OnAddTaskClick -> {
-                navigator.navigateTo(TaskEditorRoute(taskId = null))
+                sendEffect(TaskListEffect.NavigateToCreateTask)
             }
             is TaskListIntent.OnTaskClick -> {
-                navigator.navigateTo(TaskEditorRoute(taskId = intent.id))
+                sendEffect(TaskListEffect.NavigateToDetails(intent.id))
             }
         }
     }

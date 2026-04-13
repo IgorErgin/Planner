@@ -2,11 +2,11 @@ package com.github.igorergin.planner.di
 
 import android.content.Context
 import androidx.room.Room
-import com.github.planner.data.local.AppDatabase
-import com.github.planner.data.local.TaskDao
-import com.github.planner.data.model.TaskDto
-import com.github.planner.data.repository.TaskRepository
-import com.github.planner.data.service.JsonParserService
+import com.github.igorergin.planner.data.local.AppDatabase
+import com.github.igorergin.planner.data.local.TaskDao
+import com.github.igorergin.planner.data.model.TaskDto
+import com.github.igorergin.planner.data.repository.TaskRepository
+import com.github.igorergin.planner.data.service.JsonParserService
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

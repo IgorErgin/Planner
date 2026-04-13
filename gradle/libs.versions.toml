@@ -8,6 +8,7 @@ kotlin = "2.3.20"
 ksp = "2.3.6"
 composeBom = "2026.03.01"
 lifecycle = "2.10.0"
+mockk = "1.13.8"
 navigationCompose = "2.9.7"
 
 # --- Архитектура & DI ---
@@ -83,6 +84,8 @@ turbine = { module = "app.cash.turbine:turbine", name = "turbine", version.ref =
 androidx-compose-runtime-saveable = { group = "androidx.compose.runtime", name = "runtime-saveable", version.ref = "runtimeSaveable" }
 androidx-compose-animation = { group = "androidx.compose.animation", name = "animation", version.ref = "animation" }
 androidx-compose-ui-text = { group = "androidx.compose.ui", name = "ui-text", version.ref = "uiText" }
+kotlinx-coroutines-test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "coroutines" }
+mockk = { module = "io.mockk:mockk", version.ref = "mockk" }
 
 
 [bundles]
@@ -105,7 +108,8 @@ room = [
 
 test = [
     "turbine",
-    "junit"
+    "junit",
+    "mockk",
 ]
 
 [plugins]

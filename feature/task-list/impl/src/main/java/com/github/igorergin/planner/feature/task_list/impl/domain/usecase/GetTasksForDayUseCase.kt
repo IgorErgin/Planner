@@ -1,7 +1,7 @@
 package com.github.igorergin.planner.feature.task_list.impl.domain.usecase
 
 import com.github.igorergin.planner.feature.task_list.api.domain.model.TaskModel
-import com.github.planner.data.repository.TaskRepository
+import com.github.igorergin.planner.data.repository.TaskRepository
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
 import javax.inject.Inject

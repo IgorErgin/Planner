@@ -47,4 +47,6 @@ dependencies {
 
     // Testing
     testImplementation(libs.bundles.test)
+    testImplementation(libs.kotlinx.coroutines.test)
+
 }

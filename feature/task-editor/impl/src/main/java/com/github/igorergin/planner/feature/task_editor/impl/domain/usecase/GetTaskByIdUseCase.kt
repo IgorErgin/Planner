@@ -1,7 +1,7 @@
 package com.github.igorergin.planner.feature.task_editor.impl.domain.usecase
 
 import com.github.igorergin.planner.feature.task_editor.impl.domain.model.EditorTaskModel
-import com.github.planner.data.repository.TaskRepository
+import com.github.igorergin.planner.data.repository.TaskRepository
 import javax.inject.Inject
 
 class GetTaskByIdUseCase @Inject constructor(
