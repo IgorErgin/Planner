@@ -57,15 +57,15 @@ Planner — это современное Native Android приложение д
 
 ## 📸 Визуальный обзор
 
-### Скриншоты
+### 📸 Скриншоты
 
 | Список задач (Светлая тема) | Список задач (Темная тема) | Редактор задач |
 | :---: | :---: | :---: |
-| ![Screen 1]() | ![Screen 2]) | ![Screen 3]() |
+| <img src="https://github.com/user-attachments/assets/b8ff9262-3f3b-4a31-a455-d96e7eaea433" width="280"> | <img src="https://github.com/user-attachments/assets/b2b5ea1e-06cb-488a-8d21-c4daf6b4e1f0" width="280"> | <img src="https://github.com/user-attachments/assets/21964790-7bab-4a3b-aa46-47594eb1bbe7" width="280"> |
 
 ### Видео демонстрация
 
-[📺 Посмотреть видео-демо на Google Drive]()
+[📺 Посмотреть видео-демо на Google Drive](https://drive.google.com/file/d/1XFROKxLSqRFuvuDOeLmoHy0zhGeCBUBW/view?usp=drive_link)
 
 ## 🛠 Установка и запуск
 
