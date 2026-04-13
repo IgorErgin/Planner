@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="task_editor_title_edit">Редактирование</string>
+    <string name="task_editor_title_new">Новое дело</string>
+    <string name="task_editor_label_title">Название</string>
+    <string name="task_editor_select_date">Выбрать дату</string>
+    <string name="task_editor_start_time_prefix">С: %1$s</string>
+    <string name="task_editor_end_time_prefix">До: %1$s</string>
+    <string name="task_editor_label_description">Описание</string>
+    <string name="task_editor_button_save">Сохранить изменения</string>
+    <string name="task_editor_button_create">Создать дело</string>
+    <string name="common_ok">ОК</string>
+</resources>
